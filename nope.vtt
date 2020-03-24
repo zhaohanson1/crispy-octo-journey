@@ -1,0 +1,13 @@
+WEBVTT
+
+STYLE
+::cue {
+    font-family: fantasy;
+}
+
+00:00.000 --> 00:04.000
+[ambient noise] 
+00:04.200 --> 00:04.750
+[slide whistle] 
+00:04.850 --> 00:05.250
+Nope.

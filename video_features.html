@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+		integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+	<header>
+		<h1>Movie Theater</h1>
+	</header>
+
+	<main>
+		<section id="video-container">
+			<video id="video1" loop autoplay muted>
+				<source src="nope.mp4">
+				<track id='subtitle' default kind='captions' label='nope.avi' srclang='en'>
+				Sorry, your browser doesn't support embedded videos.
+			</video>
+			<div id="controls-container">
+				<div id='volume-control' class="button-opacity-transition">
+					<svg width='48px' height='48px'>
+						<rect width='8' height='16' style="fill: white; transform: translate(8px, 16px) "></rect>
+						<polygon points='0,24 8,32 8,0, 0,8' style="fill:white; transform: translate(16px, 8px);">
+						</polygon>
+						<path d='M 28 15 Q 38 25 28 35' stroke='white' stroke-width='2px' fill='transparent'></path>
+						<path d='M 34 9 Q 48 25 34 41' stroke='white' stroke-width='2px' fill='transparent'></path>
+					</svg>
+					<input type="range" class="button-opacity-transition volume-bar" id="vol-bar-1" min="0" max="100">
+				</div>
+				<div id="play-button" class="button-opacity-transition toggle-button play-triangle"
+					onclick="toggleVideo()"></div>
+				<div id="pause-button" class="button-opacity-transition toggle-button" onclick="toggleVideo()">
+					<div class="pause-left"></div>
+					<div class="pause-right"></div>
+				</div>
+				<div id="fullscreen-button" class="button-opacity-transition toggle-button"
+					onclick="toggleFullscreen()"></div>
+			</div>
+
+		</section>
+	</main>
+
+	<footer>
+
+	</footer>
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+		integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+		crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+		integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+		crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+		integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+		crossorigin="anonymous"></script>
+	<script src="video_loader.js"></script>
+	</video>
+</body>
+
+</html>
